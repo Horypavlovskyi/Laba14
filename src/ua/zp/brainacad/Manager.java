@@ -5,21 +5,24 @@ import java.util.Objects;
 public class Manager extends Employee {
     private String Department;
 
+    public Manager(String fullName, String telephone) {
+        super(fullName, telephone);
+    }
 
     public String consult(){
-       return "Consult";
+       return " и консультирует";
 
     }
     public String talkDiscount(){
-        return "Talk about Discount";
+        return ", также рассказывает о дисконте";
     }
     public String advice(){
-        return "Give Advice";
+        return " и в конце даёт совет";
     }
 
         @Override
         public void work(){
-            System.out.println("Service" + " + " + consult() + " + " + talkDiscount() + " + " + advice());
+            System.out.println("Менеджер предоставляет сервис" + consult() + talkDiscount() + advice());
 
 
         }

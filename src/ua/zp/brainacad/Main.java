@@ -26,46 +26,29 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-    Human human = new Human("Petro Rebro", "098324342");
+    Human human = new Human("...", "...");
     Human.hello();
     Human.goodbye();
 
-//    Customer.knowProduct();
-//    Customer.buy();
 
-////    Employee.goWork();
-//    Employee.lunch();
-//    Employee.work();
-
-//    Manager.consult();
-//    Manager.talkDiscount();
-//    Manager.advice();
-
-//    Cashier.countMoney();
-
-//    Security.talkRadio();
-//
-//    Shop.open();
-//    Shop.launch();
-//    Shop.sellProduct();
-
-    Manager manager = new Manager();
+    Manager manager = new Manager("Denis Rybov", "09613131331");
     manager.work();
-//    manager.consult();
-//    manager.talkDiscount();
-//    manager.advice();
 
-    Cashier cashier = new Cashier();
+
+    Cashier cashier = new Cashier("Masha Polskaya", "082323232");
     cashier.work();
-//    cashier.countMoney();
 
-    Security security = new Security();
+
+    Security security = new Security("Victor Pavlovish", "09914312414");
     security.work();
-//    security.talkRadio();
 
-    Shop shop = new Shop();
-    Employee employee = new Employee("Ivan Ivaniv", "0954234234");
     Customer customer = new Customer("Petro Rebro", "0982323232");
+
+
+    Shop shop = new Shop("Varus","Запорожье, пр. Соборний, 140", manager,cashier,security,customer);
+
+
+    Employee employee = new Employee("...", "...");
 
 
     shop.open();
@@ -73,11 +56,7 @@ public class Main {
 
     //2
     shop.sellProduct();
-    customer.knowProduct();
-    manager.work();
-    customer.buy();
-    cashier.work();
-    security.work();
+
 
     //3
     shop.launch();

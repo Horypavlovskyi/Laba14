@@ -12,13 +12,13 @@ public class Employee extends Human {
     }
 
     public void goWork() {
-        System.out.println("Go to Work");
+        System.out.println("Все сотрудники приходят на работу");
     }
     public void lunch() {
-        System.out.println("Go to Lunch");
+        System.out.println("Сотрудники идут на обед");
     }
     public void work() {
-        System.out.println("Work");
+        System.out.println("Делать работу");
     }
 
     @Override

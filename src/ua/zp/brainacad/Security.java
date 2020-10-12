@@ -1,13 +1,17 @@
 package ua.zp.brainacad;
 
 public class Security extends Employee {
+    public Security(String fullName, String telephone) {
+        super(fullName, telephone);
+    }
+
     public String talkRadio() {
-        return "Talk on the radio";
+        return " и говорит по рации";
 
     }
     @Override
     public void work(){
-        System.out.println("Theft protection" + " + " + talkRadio());
+        System.out.println("Охранник следит за клиентами" + talkRadio());
 
     }
 

@@ -11,10 +11,10 @@ public class Customer extends Human {
     }
 
     public void knowProduct() {
-        System.out.println("Know about Product");
+        System.out.println("Клиенты узнают о продукте");
     }
     public void buy() {
-        System.out.println("Buy");
+        System.out.println("Клиент покупает товар");
     }
 
     @Override

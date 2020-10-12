@@ -5,19 +5,35 @@ import java.util.Objects;
 public class Shop {
     private String name;
     private String address;
+
+    public Shop(String name, String address, Manager manager, Cashier cashier, Security security, Customer customer) {
+        this.name = name;
+        this.address = address;
+        this.manager = manager;
+        this.cashier = cashier;
+        this.security = security;
+        this.customer = customer;
+    }
+
     private Manager manager;
     private Cashier cashier;
     private Security security;
     private Customer customer;
 
     public void open(){
-        System.out.println("Shop Open");
+        System.out.println("Магазин открылся");
+
     }
     public void launch(){
-        System.out.println("Go to the Launch");
+        System.out.println("Магазин закрывается на обед");
     }
     public void sellProduct(){
-        System.out.println("Sell Product");
+        System.out.println("Магазин начинает торговлю");
+        customer.knowProduct();
+        manager.work();
+        customer.buy();
+        cashier.work();
+        security.work();
     }
 
     @Override

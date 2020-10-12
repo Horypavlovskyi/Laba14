@@ -5,13 +5,17 @@ import java.util.Objects;
 public class Cashier extends Employee {
     private byte cashierNumber;
 
+    public Cashier(String fullName, String telephone) {
+        super(fullName, telephone);
+    }
+
     public String countMoney() {
-        return "Count Money";
+        return " и считает деньги";
     }
 
     @Override
     public void work(){
-        System.out.println("Change is given" + " + " + countMoney());
+        System.out.println("Кассир продаёт товар" + countMoney());
 
     }
 
